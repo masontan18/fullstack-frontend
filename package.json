@@ -26,6 +26,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"stripe": "^13.4.0",
 		"theme-change": "^2.5.0"
 	}
 }
