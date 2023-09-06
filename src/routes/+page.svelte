@@ -15,6 +15,7 @@
 	export let data;
 
 	async function uploadImage(evt) {
+		console.log("1")
 		if (evt.target['file'].files.length == 0) {
 			alert('Must choose an image');
 			return;
@@ -40,7 +41,7 @@
 				},
 				body: JSON.stringify(newImage)
 			});
-
+			console.log("2")
 			if (resp.ok) {
 				const res = await resp.json();
 				alert('Uploaded Image Successfully');
